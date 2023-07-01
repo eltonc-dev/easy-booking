@@ -1,0 +1,14 @@
+version: '3'
+services:
+  register-api:
+    build:
+      context: Backend/Register/
+      dockerfile: Dockerfile
+    ports:
+      - 5005:5000
+  guest-api:
+    build:
+      context: Backend/Guest/
+      dockerfile: Dockerfile
+    ports:
+      - 5006:5000
